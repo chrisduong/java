@@ -1,12 +1,16 @@
 #
-# Oracle Java 7 Dockerfile
+# Oracle Java 7 
+# Fork from dockerfile to support Ubuntu 12.04
 #
 # https://github.com/dockerfile/java
+# https://github.com/chrisduong/java
 # https://github.com/dockerfile/java/tree/master/oracle-java7
+# https://github.com/chrisduong/java/tree/master/oracle-java7/precise
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM chrisduong/ubuntu:dockerfile-12.04
+MAINTAINER Chris Duong <chris.duong83@gmail.com>
 
 # Install Java.
 RUN \
